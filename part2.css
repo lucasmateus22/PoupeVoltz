@@ -1,0 +1,28 @@
+.part2{
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
+    width: 80%;
+    height: 310px;
+    margin-top: 5%;
+}
+.part2 h4{
+    margin: 0;
+    padding: 0;
+    font-size:2em; ;
+}
+.imgs1{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    background-color: azure;
+    height: 300px;
+}
+.imgs1 img{
+    width: 25%;
+    height: 85%;
+}

@@ -1,0 +1,29 @@
+.boxApresentacao{
+    width: 68%;
+    height: 250px;
+    margin-top: 5%;
+    background-color: rgb(61, 116, 59);
+    font-size: 2em;
+    padding: 3% 6%;
+}
+
+.imgs2{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    height: 300px;
+}
+.imgs2 img{
+    width: 25%;
+    height: 85%;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin-top: 5%;
+}
