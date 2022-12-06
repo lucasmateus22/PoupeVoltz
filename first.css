@@ -88,6 +88,30 @@ header img{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+.row-menu a:hover{
+
+}
+span .brigth{
+    width: 3px;
+    height: 5px;
+    background-color: yellow;
+    box-shadow: 0 0 5px yellow,
+    0 0 25px yellow,
+    0 0 50px yellow,
+    0 0 100px yellow;
+    animation-name: brilho;
+    animation-timing-function: linear;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes brilho {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 100%;
+    }
+}
 .boximg-Text{
     display: flex;
     justify-content:center;
@@ -142,4 +166,12 @@ header img{
 .ln{
     display: flex;
     justify-content: center;
+}
+.img{
+    transition: .8s;
+}
+.img:hover{
+    transform: scale(1.1);
+    transition: .8s;
+    box-shadow: 0 10px 10px rgb(160, 160, 160);
 }

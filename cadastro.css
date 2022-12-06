@@ -10,6 +10,7 @@
     background-image: url(./image\ 14.png);
 }
 .boxCadastro h2{
+    display: flex;
     margin-bottom: 4%;
     font-size: 1.6em;
     text-shadow: 0px 5px 5px #7CA08B;
@@ -20,12 +21,20 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    /*------------------------*/
+    width: 0;
+    height: 0;
+    padding: 0;
+    /*------------------------*/
+    background-color: #ffff;
+    margin-bottom: 5%;
+    transition: 1s;
+}
+.boxCadastro:hover .inputCadastro{
     width: 65%;
     height: 400px;
     padding: 4%;
-    background-color: antiquewhite;
-    margin-bottom: 5%;
-}
+    }
 .inputCadastro input{
     display: flex;
     justify-content: center;
@@ -35,6 +44,12 @@
     width: 65%;
     border-radius: 0;
     color: rgb(21, 24, 21);
+}
+.inputcdt:focus .inputCadastro{
+    display: block;
+    width: 65%;
+    height: 400px;
+    padding: 4%;
 }
 #name{
     padding: 0 38%;
