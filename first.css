@@ -41,17 +41,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-
-
 /*____________________________________________________________________________*/
 body{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    background-color: black;
+    background-color: #ffff;
 }
 header{
     display: flex;
@@ -59,14 +55,14 @@ header{
     align-items: center;
     justify-content: space-around;
     height: 150px;
-    width: 95vw;
+    width: 91vw;
     margin: .5vw;
+    margin-bottom: 2%;
 }
 header img{
-    height: 5.5vw;
-    width: 5.5vw;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
-    border: 2px solid black;
 }
 .menu-top{
     display: flex;
@@ -75,14 +71,14 @@ header img{
     height: 30%;
     width: 80vw;
     border-radius: 50px;
-    background-color:#6a9448;
+    background-color:#74945B;
 }
 .row-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 90vw;
-    font-size: 25px;
+    width: 95vw;
+    font-size: 1.5em;
     padding: 0.3%;
     list-style: none;
 }
@@ -93,13 +89,18 @@ header img{
     font-weight: bold;
 }
 .boximg-Text{
-    display: none;
+    display: flex;
     justify-content:center;
 
 }
+.box-one{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .boximg-Text img{
     overflow: hidden;
-    width: 94vw;
+    width: 91vw;
 }
 .legnd{
     position: absolute;
@@ -109,6 +110,7 @@ header img{
     justify-content: center;
     height: 100%;
     width: 92%;
+    padding-left: 3vw;
 }
 .legnd span{
     width: 21%;
@@ -131,8 +133,13 @@ header img{
     text-align: center;
     width: 26%;
 }
-line{
-    width: 100%;
-    background-color: #6a9448;
+.line1{
+    width: 95%;
+    height: 2px;
+    background-color: #74945B;
     margin-top: 2.8%;
+}
+.ln{
+    display: flex;
+    justify-content: center;
 }
