@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Artifika&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="first.css">
     <link rel="stylesheet" href="calculator.css">
     <link rel="stylesheet" href="part2.css">
     <link rel="stylesheet" href="apresentacao.css">
     <link rel="stylesheet" href="cadastro.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap'); </style>
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
         <ul class="row-menu">
             <li class="link-nav"><a href="">HOME</a></li>
             <li class="link-nav"><a href="#about">SOBRE NÓS</a></li>
-            <li class="link-nav"><a href="">SERVIÇOS</a></li>
+            <li class="link-nav"><a href="#calculator">SERVIÇOS</a></li>
             <li class="link-nav"><a href="#redes">CONTATO</a></li>
             <li class="link-nav"><a href="#perfil">PERFIL</a></li>
         </ul>
@@ -28,19 +30,23 @@
 <div class="boximg-Text">
         <img src="./ee3f367b-c5ac-4147-b670-667636a253d3.jfif" alt="">
     <section class="legnd">
+      <section class="lgd1">
         <h1>CONSUMO</h1>
         <h4 id="consc">Consciente</h4>
+      </section>  
     <span><div class="brigth"></div> </span>
       <div class="poupe">
-        <h1>POUPE!</h1>
-        <H4>Para investir.</H4> 
+        <section class="lgd2">
+          <h1>POUPE!</h1>
+          <H4>Para investir.</H4>
+        </section>  
       </div>
     </section>
   </div>
   <div class="ln"><div class="line1"> </div></div>
   
 </div>
-      <div class="content-calculator"> 
+      <div class="content-calculator" id="calculator"> 
         <div class="calculator2">
             <div class="caixa-text">
               <h5 id="pot" class="text-cal">Potência</h5>
@@ -48,35 +54,37 @@
             </div>
             <div class="calculator1">
               <div class="input-valuer">
-                <input type="text" placeholder="Digite o valor em Watts" id="entrada">
-                <input type="number" name="" list="hora" placeholder="Horas" class="hourMin">
+                <input type="text" placeholder="Digite o valor em Watts" id="n1" class="entrada">
+                <input type="number" name="" list="hora" placeholder="Horas" class="hourMin" id="n3">
+
                   <datalist id="hora">
-                    <option value="1H"></option>
-                    <option value="2H"></option>
-                    <option value="3H"></option>
-                    <option value="4H"></option>
-                    <option value="5H"></option>
-                    <option value="6H"></option>
-                    <option value="7H"></option>
-                    <option value="8H"></option>
-                    <option value="9H"></option>
-                    <option value="10H"></option>
-                    <option value="11H"></option>
-                    <option value="12H"></option>
-                    <option value="13H"></option>
-                    <option value="14H"></option>
-                    <option value="15H"></option>
-                    <option value="16H"></option>
-                    <option value="17H"></option>
-                    <option value="18H"></option>
-                    <option value="19H"></option>
-                    <option value="20H"></option>
-                    <option value="21H"></option>
-                    <option value="22H"></option>
-                    <option value="23H"></option>
-                    <option value="24H"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                    <option value="13"></option>
+                    <option value="14"></option>
+                    <option value="15"></option>
+                    <option value="16"></option>
+                    <option value="17"></option>
+                    <option value="18"></option>
+                    <option value="19"></option>
+                    <option value="20"></option>
+                    <option value="21"></option>
+                    <option value="22"></option>
+                    <option value="23"></option>
+                    <option value="24"></option>
                   </datalist>
-                <input type="number" name="" list="minutes" placeholder="Minutos" class="hourMin">
+
+                <input type="number" name="" list="minutes" placeholder="Minutos" class="hourMin" id="m2">
                   <datalist id="minutes">
                     <option value="5"></option>
                     <option value="10"></option>
@@ -91,19 +99,59 @@
                     <option value="55"></option>
                   </datalist>   
               </div>
-              <div class="labelNames">
-                <div class="space"></div>
-                <div class="textinput1">HORAS</div>
-                <div class="textinput2">MINUTOS</div>
+
+              <div class="space">
+                <div class="entrada">,</div>
+                <div class="hM">
+                  <h4>Horas</h4>
+                  <h4>Minutos</h4>
+                </div>
+                
               </div>
+
             <div class="input-valuer2">
-              <input type="number" name="" id="">
-              <input type="number" name="" id="">
+              <input type="number" name="" id="n2" list="dias" placeholder="Dias">
+              <datalist id="dias">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+                <option value="13"></option>
+                <option value="14"></option>
+                <option value="15"></option>
+                <option value="16"></option>
+                <option value="17"></option>
+                <option value="18"></option>
+                <option value="19"></option>
+                <option value="20"></option>
+                <option value="21"></option>
+                <option value="22"></option>
+                <option value="23"></option>
+                <option value="24"></option>
+                <option value="25"></option>
+                <option value="26"></option>
+                <option value="27"></option>
+                <option value="28"></option>
+                <option value="29"></option>
+                <option value="30"></option>
+                <option value="31"></option>
+              </datalist>
+
+              <input type="number" name="" id="" placeholder="Preço KH/H">
+              
               <div id="result">
                 <div class="resultValue">
                   <section>
                     <h4>Valor p/ hora</h4>
-                    <h5>0,00R$</h5>
+                    <h5 id="output">0,00R$</h5>
                   </section>
                   <section>
                     <h4>Valor total</h4>
@@ -113,11 +161,11 @@
                 <div class="resultTime">
                   <section>
                     <h5>1min</h5>
-                    <h5 for="" aria-placeholder="0,00R$">0,00R$</h5>
+                    <h5>0,00R$</h5>
                   </section>
                   <section>
                     <h5>15min</h5>
-                    <h5 for="" aria-placeholder="0,00R$">0,00R$</h5>
+                    <h5>0,00R$</h5>
                   </section>
                   <section>
                     <h5>30min</h5>
@@ -137,7 +185,7 @@
         <img src="./image 15.png" alt="" class="img">
       </div>
       </div>
-      <div class="boxApresentacao">No Brasil são desperdiçados milhões<br>
+      <div class="boxApresentacao" id="about">No Brasil são desperdiçados milhões<br>
         de reais todos os anos em energia, incentivados pela ODS 7 e pelo<br> cede de mudança, o projeto PoupeVoltz foi criado pelas mãos do<br> 
         time de Desenvolvimento de sistemas, juntamente com o apoio<br> 
         do time de Multimídia, e a partir disso, pessoas como Dona Maria<br> poderão economizar, gerir melhor suas contas e aprender sobre<br>
@@ -151,7 +199,7 @@
       <div class="line"></div>
       <div class="boxCadastro">
         <h2>Faça aqui seu cadastro e aprenda a economizar!</h2>
-        <div class="inputCadastro">
+        <div class="inputCadastro" id="perfil">
           <form action="" method="post">
             <input type="text" placeholder="Nome" id="name" class="inputcdt">
           </form>
@@ -163,10 +211,11 @@
           </form>  
         </div>
       </div>
-      <div class="redes">
+      <div class="redes" id="redes">
         <a href="" id="facebook"><img src="./image 11.png" alt="" class="img"></a>
         <a href="" id="instagram"><img src="./image 12.png" alt="" class="img"></a>
         <a href="" id="whatsapp"><img src="./image 13.png" alt="" class="img"></a>
       </div>
+      <script src="./index.js" type="javascript/text"></script>
 </body>
 </html>

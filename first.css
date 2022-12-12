@@ -88,6 +88,8 @@ header img{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+/*
+
 .row-menu a:hover{
 
 }
@@ -112,10 +114,19 @@ span .brigth{
         margin-left: 100%;
     }
 }
+
+.img{
+    transition: .8s;
+}
+.img:hover{
+    transform: scale(1.1);
+    transition: .8s;
+    box-shadow: 0 10px 10px rgb(160, 160, 160);
+}
+*/
 .boximg-Text{
     display: flex;
     justify-content:center;
-
 }
 .box-one{
     display: flex;
@@ -128,27 +139,48 @@ span .brigth{
 }
 .legnd{
     position: absolute;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
     width: 92%;
-    padding-left: 3vw;
+    padding-left: 5vw;
+    margin-top: 200px;
 }
 .legnd span{
-    width: 21%;
+    width: 26%;
     height: 2px;
     background-color: rgb(251, 255, 0);
-    margin: 2%;
+    margin: 2% 4%;    
 }
 .legnd h1{
-    font-size: 5em;
+    font-size: 96px;
     color: rgb(255, 255, 255);
 }
+.lgd1 h1{
+    font-family: 'Poppins';
+}
 .legnd h4{
-    font-size: 2.8em;
+    font-size: 55px;
     color: white;
+}
+.lgd1{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 30vw;
+}
+.lgd1 h1{
+    font-family: 'Artifika', serif;
+}
+.lgd2{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 25vw;
+    margin-left: 2%;
 }
 #consc{
     margin-left: 11.5%;
@@ -167,11 +199,4 @@ span .brigth{
     display: flex;
     justify-content: center;
 }
-.img{
-    transition: .8s;
-}
-.img:hover{
-    transform: scale(1.1);
-    transition: .8s;
-    box-shadow: 0 10px 10px rgb(160, 160, 160);
-}
+

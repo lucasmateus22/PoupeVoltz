@@ -40,7 +40,7 @@
     padding: 7px 20px;
     border-left: 1px solid rgb(175, 175, 175);
 }
-#entrada{
+#n1{
     width: 60%;
     height: 89px;
     margin-right: 5%;
@@ -59,7 +59,7 @@
     height: 470px;
     background-color: #9B9999;
 }
-input{
+.content-calculator input{
     font-size: 1.6em;
     height: 89px;
     border-radius: 18px;
@@ -85,8 +85,25 @@ input{
     height: 30px;
     font-size: 1.2em;
 }
+.saida{
+    width: 10px;
+    height: 4px;
+    background-color: blue;
+}
 .space{
-    width: 61%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+.space .entrada{
+    width: 92%;
+}
+.hM{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4em;
+    width: 100%;
 }
 .textinput1{
     width: 20%;

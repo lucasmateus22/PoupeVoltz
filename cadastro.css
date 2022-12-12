@@ -22,49 +22,60 @@
     justify-content: space-around;
     align-items: center;
     /*------------------------*/
-    width: 0;
-    height: 0;
-    padding: 0;
+    width: 65%;
+    height: 400px;
+    padding: 4%;
     /*------------------------*/
     background-color: #ffff;
     margin-bottom: 5%;
     transition: 1s;
 }
-.boxCadastro:hover .inputCadastro{
-    width: 65%;
-    height: 400px;
-    padding: 4%;
-    }
+/*
+
+
+
+*/
 .inputCadastro input{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
     background-color:#74945B;
-    width: 65%;
+    width: 100%;
+    border: none;
     border-radius: 0;
     color: rgb(21, 24, 21);
+    outline: none;
 }
-.inputcdt:focus .inputCadastro{
-    display: block;
-    width: 65%;
-    height: 400px;
-    padding: 4%;
+.inputCadastro #name:focus{
+    padding-left: 10%;
+}
+.inputCadastro #num:focus{
+    padding-left: 10%;
+}
+.inputCadastro #mail:focus{
+    padding-left: 10%;
 }
 #name{
     padding: 0 38%;
+    transition: .8s;
 }
 #num{
     padding: 0 35%;
+    transition: .8s;
 }
 #mail{
     padding: 0 38%;
+    transition: .8s;
 }
 .inputCadastro form{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#74945B; 
+    background-color:#74945B;
+    width: 70%;
+    height: 18%;
 }
 .redes{
     display: flex;
@@ -73,6 +84,7 @@
     align-items: center;
     width: 100%;
     height: 50px;
+    margin-right: 10%;
     background-color: white;
 }
 .redes img{
