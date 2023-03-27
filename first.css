@@ -49,6 +49,9 @@ body{
     width: 100vw;
     background-color: #ffff;
 }
+input{
+    outline: none;
+}
 header{
     display: flex;
     flex-direction: row;
@@ -76,22 +79,31 @@ header img{
 .row-menu{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
+    align-items: center;
     width: 95vw;
+    height: 100%;
     font-size: 1.5em;
-    padding: 0.3%;
+    padding: 0% 0.3%;
     list-style: none;
 }
 .row-menu li a{
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    height: 95%;
 }
-/*
-
+.row-menu li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 .row-menu a:hover{
-
+    background-color: rgba(255, 255, 255, 0.628);
+    color: #74945B;
 }
 span .brigth{
     width: 3px;
@@ -114,7 +126,6 @@ span .brigth{
         margin-left: 100%;
     }
 }
-
 .img{
     transition: .8s;
 }
@@ -123,7 +134,7 @@ span .brigth{
     transition: .8s;
     box-shadow: 0 10px 10px rgb(160, 160, 160);
 }
-*/
+
 .boximg-Text{
     display: flex;
     justify-content:center;

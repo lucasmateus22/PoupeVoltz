@@ -26,22 +26,17 @@
     height: 400px;
     padding: 4%;
     /*------------------------*/
-    background-color: #ffff;
+    background-color: rgba(255, 255, 255, 0.48);
     margin-bottom: 5%;
     transition: 1s;
 }
-/*
-
-
-
-*/
 .inputCadastro input{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
-    background-color:#74945B;
+    background-color:#74945b00;
     width: 100%;
     border: none;
     border-radius: 0;
@@ -73,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#74945B;
+    background-color:#74945b87;
     width: 70%;
     height: 18%;
 }
